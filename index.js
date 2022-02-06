@@ -6,9 +6,9 @@ let daylist = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
 
 let currentDate = new Date();
 let d = currentDate.getDay()
-let h = currentDate.getHours()
-let m = currentDate.getMinutes()
-let currentDay = daylist[d + 2] 
+let h = 7 //currentDate.getHours()
+let m = 20 //currentDate.getMinutes()
+let currentDay = daylist[d] 
 let currentLesson
 let lessons = {
     Mon: ["bezuzyteczne_z_matmy","zaj_kszt_kreat", "historia", "j.niem", "j.ang", "matematyka", "j.polski", "wf", "fizyka"],
@@ -22,18 +22,8 @@ let lessons = {
 let none = "brak"
 let lessonDay
 let nextLesson
-function refreshLessons(){ //change it here
+function refreshLessons(){
     lessonDay = lessons[currentDay]
-
-   // else if(h>=8 && h<=9 ){
-    //    if(h===8 && m>=50){
-    //        currentLesson = lessonDay[2]
-    //        currentLesson = lessonDay[2]
-    ////        currentLesson = lessonDay[3]
-    //    } else{
-    //        currentLesson = "przerwa"
-     //   }
-    //} 
     if(h <= 7 && m < 10 ){
         currentLesson = none
         nextLesson = lessonDay[0]
