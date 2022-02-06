@@ -6,8 +6,8 @@ let daylist = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
 
 let currentDate = new Date();
 let d = currentDate.getDay()
-let h = 7 //currentDate.getHours()
-let m = 20 //currentDate.getMinutes()
+let h = currentDate.getHours()
+let m = currentDate.getMinutes()
 let currentDay = daylist[d + 2] 
 let currentLesson
 let lessons = {
