@@ -1,6 +1,9 @@
 {
     "manifest_version": 2,
-    "name": "Advanced lesson displayer",
-    "version": "0.1",
-    "description": "A customizable extension that displays your lessons"
+    "name": "lesson displayer ez",
+    "version": "0.69",
+    "description": "A customizable extension that displays your lessons",
+    "action": {
+      "default_popup": "index.html"
   }
+}
