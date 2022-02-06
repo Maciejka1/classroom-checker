@@ -170,7 +170,6 @@ function getTime(){
     for(let i = 0; i < lessonDay.length; i++){
         htmlAllLessons.innerHTML += lessonDay[i] + "<br/>"
     }
-    setTimeout("getTime()",10000)
 }
 
 
